@@ -98,10 +98,3 @@ The notebook implements both passive and active learning across 50 runs.
 Each method trains at 90 pool sizes, from 10 to 900 observations, using
 five-fold cross-validation to select C. The average test errors are plotted
 together to compare the learning curves.
-
-## AI Attribution
-
-Keep the notebook's AI disclosure specific to Homework 8, including help
-with these setup files. Follow the syllabus requirements for identifying
-assisted sections, providing actual prompts, and citing AI-generated
-material using the required MLA guidance.
