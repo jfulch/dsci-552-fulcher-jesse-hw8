@@ -38,7 +38,8 @@ The notebook expects its working directory to be `notebook/`: the breast
 cancer data is loaded from `../data/wdbc.data`. If loading fails, check the
 kernel's working directory and the data file location.
 
-The cross-validation searches and self-training simulation can take time.
+The cross-validation searches, self-training simulation, and 50-run
+active/passive learning simulation can take considerable time.
 Allow every simulation to finish before interpreting its averages. Resolve
 any convergence warnings, rerun affected cells, and update written results
 if they change. Save the notebook with its tables and figures.
@@ -93,9 +94,10 @@ banknote data across 50 runs. Each run reserves 472 test observations and
 uses the remaining 900 as a training pool, adding 10 observations per step
 and plotting average test error against training-set size.
 
-At the time these setup files were prepared, the notebook contains the
-Question 2 prompts but not its implementation. The setup files do not
-establish that the homework is complete or ready to submit.
+The notebook implements both passive and active learning across 50 runs.
+Each method trains at 90 pool sizes, from 10 to 900 observations, using
+five-fold cross-validation to select C. The average test errors are plotted
+together to compare the learning curves.
 
 ## AI Attribution
 
